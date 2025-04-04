@@ -2,7 +2,14 @@
 
 `theme-skins` is a pattern for defining reusable Tailwind themes by "skinning" individual components. This pattern takes advantage of Tailwind v4, such as CSS-first configuration, design tokens exposed as CSS variables, and more.
 
-`theme-skin` Components are built on a simple concept: each component has a skin. A **Theme** is a collection of **skins**.
+`theme-skin` Components are built on a simple concept: each component has a **skin**. A **theme** is a collection of **skins**.
+
+- Fully modular
+- Strict naming conventions
+- Predictable & consistent theming
+- Easy to switch themes
+- Extensible components–add/override styles in CSS
+- Centralized state for skinned properties
 
 **button.tsx**
 
