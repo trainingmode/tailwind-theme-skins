@@ -1,0 +1,14 @@
+[data-skin="button"] {
+  --bg: var(--bg-primary);
+  --text: var(--text-secondary);
+
+  @variant hover {
+    --bg: color-mix(in oklab, var(--bg-primary) 85%, transparent);
+  }
+  @variant active {
+    --bg: color-mix(in oklab, var(--bg-primary) 60%, transparent);
+  }
+  @variant disabled {
+    --bg: var(--bg-disabled);
+  }
+}

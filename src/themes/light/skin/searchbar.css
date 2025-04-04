@@ -1,0 +1,38 @@
+[data-skin="searchbar"] {
+  --bg: var(--bg-primary);
+  --text: var(--text-primary);
+  --outline: var(--outline-secondary);
+
+  [data-skin="icon"] {
+    --text: var(--color-violet-500);
+  }
+
+  input {
+    --text: var(--text-primary);
+
+    &::placeholder {
+      --text: var(--placeholder-primary);
+    }
+  }
+
+  @variant hover {
+    --outline: color-mix(in oklab, var(--outline-secondary) 60%, transparent);
+
+    input {
+      &::placeholder {
+        --text: color-mix(
+          in oklab,
+          var(--placeholder-primary) 60%,
+          transparent
+        );
+      }
+    }
+  }
+  @variant has-focus {
+    --outline: var(--outline-primary);
+
+    [data-skin="icon"] {
+      --text: var(--color-amber-500);
+    }
+  }
+}

@@ -1,0 +1,21 @@
+[data-theme="dark"] {
+  --bg-container: var(--color-black);
+  --bg-primary: var(--color-purple-500);
+  --bg-disabled: var(--color-gray-800);
+
+  --text-primary: var(--color-white);
+  --text-secondary: var(--color-black);
+
+  --placeholder-primary: var(--color-cyan-300);
+
+  --outline-primary: var(--color-purple-500);
+  --outline-secondary: var(--color-gray-300);
+
+  @import "./skin/button.css";
+  @import "./skin/dropdown.css";
+  @import "./skin/searchbar.css";
+}
+
+html[data-theme="dark"] {
+  @apply bg-(--bg-container) text-(--text-primary);
+}
